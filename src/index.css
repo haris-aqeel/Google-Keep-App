@@ -1,13 +1,157 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  width: 100%;
+}
+
+/* ================ Header Navbar Portion ============================= */
+
+.navbar {
+  background-color: rgb(65, 59, 59);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: -1px;
+  font-family: Arial, Helvetica, sans-serif;
+  word-spacing: -2px;
+  height: 70px;
+}
+
+/* ================ Body Portion ============================= */
+
+.Body{
+  min-height: 82vh;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+/* ================ Body Input Portion ============================= */
+
+.Input{
+  width: 400px;
+  height: 190px;
+  box-shadow : 1px 4px 4px grey;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+
+.Input input{
+  width: 100%;
+  padding: 9px 7px;
+  outline: none;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: cursive
+}
+
+.Input textarea{
+  width: 100%;
+  height: 145px;
+  padding: 9px 9px;
+  outline: none;
+  font-size: 18px;
+  font-family: cursive;
+  text-transform: capitalize; 
+}
+
+.Input .plus{
+  position: absolute;
+  top: 110px;
+  left: 390px;
+  font-size: 50px;
+  color: rgb(228, 167, 53);
+  cursor: pointer;
+}
+
+
+.plus:hover{
+  font-weight: 800;
+  font-size: 54px;
+  color: orange;
+  cursor: pointer;
+}
+
+/* ================ Data Portion ============================= */
+.align{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  height: auto;
+  margin: 50px 100px;
+}
+
+.Data{
+  width: 300px;
+  height: auto;
+  box-shadow : 1px 4px 4px grey;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  margin: 10px 0px;
+}
+
+
+.Data h2{
+  width: 100%;
+  padding: 9px 7px;
+  outline: none;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: cursive
+}
+
+.Data p{
+  width: 300px;
+  overflow-wrap: break-word;
+  min-height: 130px;
+  padding: 9px 9px;
+  outline: none;
+  font-size: 18px;
+  font-family: cursive;
+  text-transform: capitalize; 
+}
+
+.Data .delete{
+  position: absolute;
+  top: 90px;
+  left: 260px;
+  font-size: 30px;
+  color: rgb(228, 167, 53);
+  cursor: pointer;
+}
+
+
+
+.delete:hover{
+  font-weight: 800;
+  font-size: 34px;
+  color: orange;
+  cursor: pointer;
+}
+
+small{
+  opacity: 0.7;
+  padding: 2px 5px;
+}
+
+/* ================ Footer Portion ============================= */
+
+.Footer{
+  background-color: rgb(65, 59, 59);
+  text-align: center;
+  color: #fff;
+  margin: 5px 0px 0px 0px;
+  font-size: 20px;
+  padding: 12px;
+  font-weight: 800;
 }
